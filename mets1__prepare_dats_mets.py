@@ -11,18 +11,13 @@ from itertools import product
 import sys
 import subprocess as sp
 
-# python prepare_dats_mets.py ../data_March23/metadata_formatted_Feb24.tsv inp_dats.txt out_metas/ comparisons_metas.txt
+# python prepare_dats_mets.py metadata.tsv inp_dats.txt out_metas/ comparisons_metas.txt
 
 # This script assumes that the minimum number of samples in at least one of the two categories to compare is 10
 # and that the features is present in both cases and controls
 
-# INP_METAD = "../data_March23/metadata_formatted_Mar23.tsv"
-# INP_TABLE = "out_metas_divs/divs_formatted.tsv"
-# OUT_DIR = "out_metas_divs/"
-# TOT_COMPARISONS = "comparisons_metas.txt"
-
-CURR_Rscript = "/shares/CIBIO-Storage/CM/scratch/users/gianmarco.piccinno/tools/conda_installation/envs/gpiccinno_oncobiome/bin/Rscript"
-PAHT_run_metas = "/shares/CIBIO-Storage/CM/scratch/projects/gpiccinno_onc_crc_staging/20241017_revision_Piccinno_et_al/master_scripts/mets2__run_metas.R"
+CURR_Rscript = "" # path to Rscript
+PAHT_run_metas = "mets2__run_metas.R"
 
 
 INP_METAD = sys.argv[1]
