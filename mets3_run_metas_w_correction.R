@@ -35,14 +35,6 @@ print(OR_OUT_DIR)
 print(TOT_COMPARISONS)
 print(MAX_POOL)
 
-
-# stop("Here")
-
-########################
-# Need to implement the filters already present in the original code!!!!
-########################
-
-
 tot_dats <- fread(INP_DATS, data.table = FALSE, header = FALSE, sep = ":")
 
 if (! dir.exists(OR_OUT_DIR) ) {
